@@ -31,7 +31,7 @@ nav_item:
 - url: "/collaborations"
   text: Collaborations
 - url: "/about"
-  text: About
+  text: Sur
 exclude:
 - ".sass-cache/"
 - ".jekyll-cache/"

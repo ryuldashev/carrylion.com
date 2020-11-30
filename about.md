@@ -1,13 +1,13 @@
 ---
-title: About
+title: Sur
 permalink: "/about"
 layout: inner
 image: "/img/carina2.jpg"
 ---
 
-Vincent wanted to be known as the painter of sunflowers.
+Vincent voulait être connu comme le peintre des tournesols.
 
-Just like other painters working at the time, Vincent made flower still lifes. But he did things a little differently. After practising with different flowers, he chose a specific variety: the sunflower. His fellow painters thought that sunflowers were perhaps somewhat coarse and unrefined. But this is exactly what Vincent liked, and he also enjoyed painting flowers that had gone to seed. He gave sunflowers the lead role in several paintings.
+Tout comme les autres peintres de l'époque, Vincent a réalisé des natures mortes de fleurs. Mais il a fait les choses un peu différemment. Après avoir pratiqué avec différentes fleurs, il a choisi une variété spécifique: le tournesol. Ses collègues peintres pensaient que les tournesols étaient peut-être un peu grossiers et non raffinés. Mais c'est exactement ce que Vincent aimait, et il aimait aussi peindre des fleurs qui avaient germé. Il a donné aux tournesols le rôle principal dans plusieurs peintures.
 
 ### Loving Vincent
 
