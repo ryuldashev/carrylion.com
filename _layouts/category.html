@@ -1,0 +1,25 @@
+{% include header.html %}
+
+<main class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-6">
+
+                <h2 class="section-title text-center">{{ page.title }}</h2>
+
+                {% for post in site.categories[page.tag] %}
+                    <div class="wow fadeIn">
+                        {% if post.position == "left" %}
+                            {% include content-left.html %}
+                        {% else %}
+                            {% include content-right.html %}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}

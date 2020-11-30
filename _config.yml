@@ -30,6 +30,8 @@ enable_nav: true
 nav_item:
 - url: "/"
   text: Home
+- url: "/collaborations"
+  text: Collaborations
 - url: "/about"
   text: About
 exclude:

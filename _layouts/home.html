@@ -18,15 +18,13 @@
 
             {% for post in site.posts %}
               <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% else %}
-                {% include content-right.html %}
-              {% endif %}
+                {% if post.position == "left" %}
+                  {% include content-left.html %}
+                {% else %}
+                  {% include content-right.html %}
+                {% endif %}
               </div>
             {% endfor %}
-
-            {% include pagination.html %}
 
           </div>
         </div>
