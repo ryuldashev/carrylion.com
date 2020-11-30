@@ -13,13 +13,13 @@ email: carrylion@gmail.com
 baseurl: ''
 url: https://carrylion.fr
 social:
-- url: "https://instagram.com/carrylionart"
+- url: https://instagram.com/carrylionart
   text: instagram
-- url: "https://vimeo.com/carrylion"
+- url: https://vimeo.com/carrylion
   text: vimeo
-- url: "https://carrylion.tumblr.com/"
+- url: https://carrylion.tumblr.com/
   text: tumblr
-- url: "https://www.linkedin.com/in/carrylion/"
+- url: https://www.linkedin.com/in/carrylion/
   text: linkedin
 demoreel_url: https://vimeo.com/435476536
 footer_text: "© 2020 Carina Mirzaeva"
