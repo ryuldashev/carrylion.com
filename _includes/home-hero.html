@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          {% if site.title != '' %}
+          <h1 class="text-center">{{site.title}}</h1>
+          {% endif %}
+
+          {% if site.description != '' or site.enable_contact == true %}
+          <h2 class="text-center">
+            {% if site.description != '' %}
+            {{site.description}}
+            {% endif %}
+
+            {% if site.enable_contact == true %}
+            {% include contact.html %}
+            {% include contact-modal.html %}
+            {% endif %}
+          </h2>
+          {% endif %}
+
+          <div class="hero-buttons">
+            {% if site.instagram != '' %}
+              <a href="{{ site.instagram }}">
+                <button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i>Instagram</button></a>
+            {% endif %}
+            {% if site.vimeo != '' %}
+              <a href="{{ site.vimeo }}">
+                <button class="btn btn-default btn-lg"><i class="fa fa-vimeo fa-lg"></i>Vimeo</button></a>
+            {% endif %}
+            {% if site.tumblr != '' %}
+              <a href="{{ site.tumblr }}">
+                <button class="btn btn-default btn-lg"><i class="fa fa-tumblr fa-lg"></i>Tumblr</button></a>
+            {% endif %}
+            {% if site.linkedin != '' %}
+            <a href="{{ site.linkedin }}">
+              <button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>Linkedin</button></a>
+            {% endif %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a class="section-jump text-center" href="#portfolio">
+        <i class="fa fa-angle-down fa-3x"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
