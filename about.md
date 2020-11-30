@@ -2,9 +2,8 @@
 title: About
 permalink: "/about/"
 layout: inner
-image: /img/carina2.jpg
+image: "/img/carina2.jpg"
 ---
-
 
 Vincent wanted to be known as the painter of sunflowers.
 
