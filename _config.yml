@@ -28,8 +28,6 @@ google_analytics: UA-9999999-99
 enable_contact: true
 enable_nav: true
 nav_item:
-- url: "/"
-  text: Home
 - url: "/collaborations"
   text: Collaborations
 - url: "/about"

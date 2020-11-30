@@ -37,8 +37,10 @@
       <div class="container">
           <div class="navbar-header">
               <div class="navbar-brand">
-                  <h1 class="text-center">{{site.title}}</h1>
-                  <h2 class="text-center">{{site.description}}</h2>
+                  <a href="/">
+                      <h1 class="text-center">{{site.title}}</h1>
+                      <h2 class="text-center">{{site.description}}</h2>
+                  </a>
               </div>
 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -51,7 +53,7 @@
             <ul class="nav navbar-nav navbar-left">
               {% for item in site.nav_item %}
                 <li>
-                  <a href="{{ item.url }}">{{ item.text }}</a>
+                  <a href="{{ item.url }}" {% if item.url == page.permalink %} class="active"{% endif %}>{{ item.text }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -61,7 +63,7 @@
                   <a href="https://carrylion.com">English</a>
               </li>
               <li>
-                  <a href="https://carrylion.fr">Français</a>
+                  <a href="https://carrylion.fr" class="active">Français</a>
               </li>
             </ul>
           </div>

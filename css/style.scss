@@ -133,6 +133,14 @@ button.btn, input.btn {
       background: none !important;
       border-color: #F87C2E;
     }
+
+    &.active {
+      cursor: pointer;
+      pointer-events: none;
+      color: #666;
+      background: none !important;
+      border-color: #777;
+    }
   }
   
   .container {
@@ -143,6 +151,21 @@ button.btn, input.btn {
     position: absolute;
     width: 100%;
     transition: opacity ease 0.2s;
+
+    a {
+      display: block;
+      width: auto;
+      float: none;
+      color: #333 !important;
+      border: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+
+      &:hover {
+        animation: heartBeat;
+        color: #F87C2E !important;
+      }
+    }
 
     h1 {
       font-size: 14px;
@@ -162,6 +185,7 @@ button.btn, input.btn {
     box-shadow: 10px 0 20px rgba(0,0,0,0.2);
 
     .navbar-brand {
+      display: block;
       opacity: 1;
     }
   }
@@ -169,6 +193,7 @@ button.btn, input.btn {
 
 .homepage {
   .navbar-brand {
+    display: none;
     opacity: 0;
   }
 }

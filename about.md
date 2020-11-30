@@ -1,6 +1,6 @@
 ---
 title: About
-permalink: "/about/"
+permalink: "/about"
 layout: inner
 image: "/img/carina2.jpg"
 ---
