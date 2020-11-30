@@ -33,7 +33,7 @@ $secondary: #FF7B7B;
 }
 
 body {
-  background-color: #e9edf0;
+  background-color: #fff;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -89,8 +89,6 @@ button.btn, input.btn {
 
 .main {
   background-color: white;
-  border-left: solid 1px #cedfea;
-  border-right: solid 1px #cedfea;
   &.container {
     padding: 0;
   }
@@ -108,17 +106,62 @@ button.btn, input.btn {
   }
 }
 
+.navbar-light {
+  background-color: #fff;
+  transition: box-shadow;
+
+  a {
+    display: inline-block;
+    color: #555;
+    padding: 3px 0 0 !important;
+    margin: 12px 10px !important;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      background: none !important;
+      border-color: #F87C2E;
+    }
+  }
+  
+  .container {
+    position: relative;
+  }
+
+  .navbar-brand {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: opacity ease 0.2s;
+
+    h1 {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 3px 0;
+    }
+    h2 {
+      font-size: 8px;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 5px;
+      margin: 3px 0;
+    }
+  }
+
+  &.scrolled {
+    box-shadow: 10px 0 20px rgba(0,0,0,0.2);
+
+    .navbar-brand {
+      opacity: 1;
+    }
+  }
+}
+
 /*--------------------------------------------------------------
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
-  @include bp-xsmall {
-    margin: 5em 0 5em 0;
-  }
-  @include bp-small {
-    margin: 5em 0 5em 0;
-  }
+  margin: 15vh 0 5vh 0;
+  min-height: 70vh;
 }
 
 .hero-content {
@@ -182,6 +225,21 @@ button.btn, input.btn {
       padding-right: 0.5em;
     }
   }
+
+  .hero-video {
+    margin-top: 5rem;
+    text-align: center;
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 10px;
+    }
+
+    img {
+      max-width: 640px;
+    }
+  }
 }
 
 /*--------------------------------------------------------------
@@ -241,10 +299,8 @@ button.btn, input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 10em;
-  @include bp-xsmall {
-    margin-top: 2em;
-  }
+  margin-top: 2em;
+
   .break {
     margin: 8em 0;
     @include bp-xsmall {
@@ -353,7 +409,7 @@ button.btn, input.btn {
   font-size: 14px;
   margin-top: 2em;
   border-top: 1px solid #efefef;
-  padding: 1em 0;
+  padding: 1.5em 0 2em;
   p {
     font-size: 12px;
     font-weight: 600;
@@ -368,6 +424,24 @@ button.btn, input.btn {
     float: right;
     @include bp-xsmall {
       float: none;
+    }
+  }
+  .social-buttons {
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+
+    a {
+      margin: 0 1rem;
+      color: #000;
+
+      i {
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: #337ab7;
+      }
     }
   }
 }

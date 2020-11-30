@@ -7,42 +7,13 @@
       <div class="hero-container">
 
         <div class="hero-content">
+          <h1 class="text-center">{{site.title}}</h1>
+          <h2 class="text-center wow rubberBand">{{site.description}}</h2>
 
-          {% if site.title != '' %}
-          <h1 class="text-center" data-wow-duration="1.5s">{{site.title}}</h1>
-          {% endif %}
-
-          {% if site.description != '' or site.enable_contact == true %}
-          <h2 class="text-center wow rubberBand">
-            {% if site.description != '' %}
-            {{site.description}}
-            {% endif %}
-
-            {% if site.enable_contact == true %}
-            {% include contact.html %}
-            {% include contact-modal.html %}
-            {% endif %}
-          </h2>
-          {% endif %}
-
-          <div class="hero-buttons" data-wow-duration="1.5s">
-            {% if site.instagram != '' %}
-              <a href="{{ site.instagram }}">
-                <button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i>Instagram</button></a>
-            {% endif %}
-            {% if site.vimeo != '' %}
-              <a href="{{ site.vimeo }}">
-                <button class="btn btn-default btn-lg"><i class="fa fa-vimeo fa-lg"></i>Vimeo</button></a>
-            {% endif %}
-            {% if site.tumblr != '' %}
-              <a href="{{ site.tumblr }}">
-                <button class="btn btn-default btn-lg"><i class="fa fa-tumblr fa-lg"></i>Tumblr</button></a>
-            {% endif %}
-            {% if site.linkedin != '' %}
-            <a href="{{ site.linkedin }}">
-              <button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>Linkedin</button></a>
-            {% endif %}
-
+          <div class="hero-video">
+            <a data-fancybox data-ratio="2" data-autoplay="1" href="{{ site.demoreel_url }}">
+              <img src="/img/demoreel.jpg" width="640" alt="">
+            </a>
           </div>
 
         </div>
