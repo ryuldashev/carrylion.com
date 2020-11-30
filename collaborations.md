@@ -1,6 +1,7 @@
 ---
 title: Collaborations
-tag: collaborations
 permalink: "/collaborations"
+tag: collaborations
 layout: category
 ---
+
