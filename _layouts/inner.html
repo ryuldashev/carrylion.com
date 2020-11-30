@@ -4,6 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
+          <h2 class="section-title text-center">{{ page.title }}</h2>
+
+          {% if page.image %}
+            <img src="{{ page.image }}" class="rounded float-left img-thumbnail img-50" >
+          {% endif %}
 
           {{ content }}
 

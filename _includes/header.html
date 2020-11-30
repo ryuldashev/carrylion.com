@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
 
 </head>
-<body class="{{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
+<body class="{{ page.body_class }} {{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
 
 <div class="main container" id="top">
 

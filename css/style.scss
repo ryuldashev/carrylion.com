@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
-  margin: 5em 0;
+  margin: 7em 0 5em;
 }
 
 p {
@@ -62,7 +62,18 @@ a {
 
 img {
   width: 100%;
+
+  &.img-50 {
+    width: 50%;
+  }
+
+  &.float-left {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1rem;
+  }
 }
+
 
 button.btn, input.btn {
   padding: 12px 35px;
@@ -128,7 +139,6 @@ button.btn, input.btn {
   }
 
   .navbar-brand {
-    opacity: 0;
     position: absolute;
     width: 100%;
     transition: opacity ease 0.2s;
@@ -153,6 +163,12 @@ button.btn, input.btn {
     .navbar-brand {
       opacity: 1;
     }
+  }
+}
+
+.homepage {
+  .navbar-brand {
+    opacity: 0;
   }
 }
 
