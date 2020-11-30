@@ -9,11 +9,11 @@
         <div class="hero-content">
 
           {% if site.title != '' %}
-          <h1 class="text-center">{{site.title}}</h1>
+          <h1 class="text-center" data-wow-duration="1.5s">{{site.title}}</h1>
           {% endif %}
 
           {% if site.description != '' or site.enable_contact == true %}
-          <h2 class="text-center">
+          <h2 class="text-center wow rubberBand">
             {% if site.description != '' %}
             {{site.description}}
             {% endif %}
@@ -25,7 +25,7 @@
           </h2>
           {% endif %}
 
-          <div class="hero-buttons">
+          <div class="hero-buttons" data-wow-duration="1.5s">
             {% if site.instagram != '' %}
               <a href="{{ site.instagram }}">
                 <button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i>Instagram</button></a>

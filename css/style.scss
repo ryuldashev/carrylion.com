@@ -151,7 +151,6 @@ button.btn, input.btn {
     font-weight: normal;
     letter-spacing: 10px;
     margin-top: 15px;
-    animation: stickyletters 2s ease-in-out;
   }
 
   @keyframes stickyletters {
@@ -173,6 +172,7 @@ button.btn, input.btn {
   p {
     margin: 2em 0 4em 0;
   }
+
   .hero-buttons {
     margin: 0 auto;
     display: flex;
