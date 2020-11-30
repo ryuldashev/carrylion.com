@@ -154,11 +154,12 @@ button.btn, input.btn {
 
     a {
       display: block;
-      width: auto;
+      width: 10em;
       float: none;
       color: #333 !important;
       border: none !important;
-      margin: 0 !important;
+      text-decoration: none !important;
+      margin: -5px auto 0 !important;
       padding: 0 !important;
 
       &:hover {
