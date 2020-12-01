@@ -454,10 +454,13 @@ button.btn, input.btn {
       background-color: #EFEBE9;
     }
   }
+}
 
-  .video-block iframe {
-    max-width: 100%;
-    height: auto;
+.video-block iframe {
+  max-width: 100%;
+
+  @include bp-xsmall {
+    height: 220px;
   }
 }
 
