@@ -9,6 +9,8 @@ collections:
     title: Uploads
     output: true
 description: Animation
+section_title: Œuvres en vedette
+section_subtitle:
 email: carrylion@gmail.com
 baseurl: ''
 url: https://carrylion.fr
