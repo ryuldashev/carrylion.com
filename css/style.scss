@@ -401,6 +401,7 @@ button.btn, input.btn {
     margin-top: 5em;
     margin-left: 5em;
     @include bp-xsmall {
+      margin-top: 0.1em;
       margin-left: 0;
     }
     h3.title {
@@ -414,12 +415,22 @@ button.btn, input.btn {
         width: 3em;
         height: 3px;
         background-color: #ECEFF1;
+
+        @include bp-xsmall {
+          margin: 0 auto;
+          left: calc(50% - 1.5em);
+        }
+      }
+      @include bp-xsmall {
+        text-align: center;
+        margin-bottom: .5em;
       }
     }
     .excerpt {
       width: 80%;
       @include bp-xsmall {
         width: 100%;
+        text-align: center;
       }
     }
     button{
@@ -443,6 +454,11 @@ button.btn, input.btn {
       background-color: #EFEBE9;
     }
   }
+
+  .video-block iframe {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -453,16 +469,20 @@ button.btn, input.btn {
   margin-top: 2em;
   border-top: 1px solid #efefef;
   padding: 1.5em 0 2em;
+
   p {
     font-size: 12px;
     font-weight: 600;
     color: #9eb1bd;
     margin: 0;
     padding: 10px 0;
+
     @include bp-xsmall {
-      text-align: center;
+      font-size: 1rem;
+      padding-top: 13px;
     }
   }
+
   .section-jump {
     float: right;
     @include bp-xsmall {
@@ -480,10 +500,18 @@ button.btn, input.btn {
 
       i {
         font-size: 3rem;
+
+        @include bp-xsmall {
+          font-size: 2rem;
+        }
       }
 
       &:hover {
         color: #337ab7;
+      }
+
+      @include bp-xsmall {
+        margin: 0 0.5rem;
       }
     }
   }
