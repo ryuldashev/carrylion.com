@@ -2,11 +2,11 @@
 title: Carina Mirzaeva
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
   personal:
     title: Personal
+    output: true
+  posts:
+    title: Posts
     output: true
   uploads:
     title: Uploads
@@ -16,15 +16,15 @@ defaults:
     path: ''
     type: posts
   values:
-    video_url:
-    description:
+    video_url: 
+    description: 
 - scope:
     path: ''
     type: personal
   values:
-    image:
-    link:
-    published:
+    image: 
+    link: 
+    published: 
 description: Animation
 section_title: Œuvres en vedette
 section_subtitle: 
