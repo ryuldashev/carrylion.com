@@ -19,8 +19,22 @@
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
 
+@font-face {
+  font-family: 'Century725';
+  src: url('/font/century725.eot');
+  src: url('/font/century725.eot?#iefix') format('embedded-opentype'),
+  url('/font/century725.woff2') format('woff2'),
+  url('/font/century725.woff') format('woff'),
+  url('/font/century725.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 %opensans { font-family: 'Open Sans', sans-serif; }
-%merriweather { font-family: 'Merriweather', serif; }
+%merriweather { font-family: 'Century725', serif; }
 
 /*--------------------------------------------------------------
 	1.0 Defaults
@@ -131,6 +145,7 @@ button.btn, input.btn {
     border-style: solid;
     border-width: 0;
     border-bottom-width: 3px;
+    text-align: center;
 
     &:hover {
       background: none !important;
@@ -143,6 +158,12 @@ button.btn, input.btn {
       color: #666;
       background: none !important;
       border-color: #f0f0f0 !important;
+    }
+
+    img {
+      height: 40px;
+      width: auto;
+      margin-top: -5px;
     }
   }
 
