@@ -1,0 +1,21 @@
+{% include header.html %}
+
+<main class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-6">
+                <h2 class="section-title text-center">{{ page.title }}</h2>
+
+                {% for post in site.personal %}
+                    <div class="wow fadeIn">
+
+                        {% include content-left.html %}
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
