@@ -4,13 +4,16 @@ timezone: UTC
 collections:
   personal:
     title: Personal
-    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
+  categories:
+    title: Categories
+    output: true
+    permalink: /personal/:code
 defaults:
 - scope:
     path: ''
@@ -49,7 +52,7 @@ enable_nav: true
 nav_item:
 - url: "/collaborations"
   text: Collaborations
-- url: "/personal"
+- url: "/personal/illustrations"
   text: Personnelle
 - url: "/about"
   text: Sur

@@ -1,22 +1,44 @@
 {% include header.html %}
+{% assign personal = site.personal %}
+
+{% assign posts = personal | where: "categories", page.code
+    | sort: "date"
+    | reverse  %}
+
+category - {{ category.code }}
+page - {{ page.code }}
+page - {{ page.code }}
+url - {{ page.permalink }}
+url - {{ page.url }}
+category - {{ page.category }}
+path - {{ page.path }}
+dir = {{ page.dir }}
 
 <main class="">
     <div class="container">
+
         <div class="row">
-            <div class="col-md-12 mt-6">
+            <div class="col-md-3 mt-6">
+                <nav class="section-nav">
+                    {% for category in site.categories %}
+                        <li {% if page.url == category.url %}class="active"{% endif %}>
+                            <a href="{{ category.url }}">{{ category.title }}</a>
+                        </li>
+                    {% endfor %}
+                </nav>
+            </div>
+            <div class="col-md-9 mt-6">
+                <div class="row">
+                    <h2 class="section-title text-center">{{ page.title }}</h2>
 
-                <h2 class="section-title text-center">{{ page.title }}</h2>
-
-                {% for post in site.categories[page.tag] %}
-                    <div class="wow fadeIn">
-                        {% if post.position == "left" %}
-                            {% include content-left.html %}
-                        {% else %}
-                            {% include content-right.html %}
-                        {% endif %}
-                    </div>
-                {% endfor %}
-
+                    {% for post in posts %}
+                        <div class="col-xs-4 post-thumb wow fadeIn">
+                            <a href="{{ post.image }}" data-fancybox>
+                                <img src="{{ post.image }}" class="image" alt="">
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

@@ -237,6 +237,33 @@ button.btn, input.btn {
   }
 }
 
+.section-nav {
+  margin-top: calc(30px + 2em);
+
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+    padding: 3px 6px;
+
+    a {
+      color: #999;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 3px 5px;
+
+      &:hover {
+        color: #333;
+      }
+    }
+
+    &.active {
+      a {
+        color: #F87C2E;
+      }
+    }
+  }
+}
+
 .homepage {
   .navbar-brand {
     display: none;
@@ -503,6 +530,10 @@ button.btn, input.btn {
       background-color: #EFEBE9;
     }
   }
+}
+
+.post-thumb {
+  margin-bottom: 30px;
 }
 
 .video-block iframe {
