@@ -3,6 +3,7 @@ title: '14'
 date: 2020-12-20 09:11:00 Z
 categories:
 - illustrations
+position: 25
 image: "/uploads/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%2014%20(2).jpg"
 ---
 

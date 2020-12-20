@@ -3,6 +3,7 @@ title: '8'
 date: 2020-12-20 09:06:00 Z
 categories:
 - illustrations
+position: 16
 image: "/uploads/8.jpg"
 ---
 
