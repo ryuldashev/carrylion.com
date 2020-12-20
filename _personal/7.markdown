@@ -1,6 +1,8 @@
 ---
 title: '7'
 date: 2020-12-20 09:05:00 Z
+categories:
+- illustrations
 image: "/uploads/7.jpg"
 ---
 

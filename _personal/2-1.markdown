@@ -1,6 +1,8 @@
 ---
 title: 2-1
 date: 2020-12-20 08:58:00 Z
+categories:
+- illustrations
 image: "/uploads/2-1.jpg"
 ---
 

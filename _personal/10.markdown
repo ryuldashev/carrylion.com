@@ -1,6 +1,8 @@
 ---
 title: '10'
 date: 2020-12-20 09:06:00 Z
+categories:
+- illustrations
 image: "/uploads/10.jpg"
 ---
 
