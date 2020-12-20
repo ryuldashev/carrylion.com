@@ -13,7 +13,7 @@ collections:
   categories:
     title: Categories
     output: true
-    permalink: /personal/:code
+    permalink: /personal/:title
 defaults:
 - scope:
     path: ''
@@ -52,8 +52,9 @@ enable_nav: true
 nav_item:
 - url: "/collaborations"
   text: Collaborations
-- url: "/personal/illustrations"
+- url: "/personal"
   text: Personnelle
+  popup_collection: categories
 - url: "/about"
   text: Sur
 exclude:

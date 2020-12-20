@@ -52,7 +52,20 @@
             <ul class="nav navbar-nav navbar-left">
               {% for item in site.nav_item %}
                 <li>
-                  <a href="{{ item.url }}" {% if item.url == page.permalink %} class="active"{% endif %}>{{ item.text }}</a>
+                  <a href="{{ item.url }}" {% if page.url contains item.url %} class="active"{% endif %}>
+                      {{ item.text }}
+                  </a>
+                  {% if item.popup_collection %}
+                    <ul class="dropdown-menu">
+                        {% for submenu in site[item.popup_collection] %}
+                            <li>
+                                <a href="{{ submenu.url }}" {% if page.url == submenu.url %}class="active"{% endif %}>
+                                    {{ submenu.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                  {% endif %}
                 </li>
               {% endfor %}
             </ul>

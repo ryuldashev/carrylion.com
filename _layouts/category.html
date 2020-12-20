@@ -1,21 +1,14 @@
 {% include header.html %}
-{% assign personal = site.personal %}
 
-{% assign posts = personal | where: "categories", page.code
+{%
+assign posts = site.personal | where: "categories", page.code
     | sort: "date"
-    | reverse  %}
-
-category - {{ category.code }}
-page - {{ page.code }}
-page - {{ page.code }}
-url - {{ page.permalink }}
-url - {{ page.url }}
-category - {{ page.category }}
-path - {{ page.path }}
-dir = {{ page.dir }}
+    | reverse
+%}
 
 <main class="">
     <div class="container">
+        <h2 class="section-title text-center">{{ page.title }}</h2>
 
         <div class="row">
             <div class="col-md-3 mt-6">
@@ -25,12 +18,16 @@ dir = {{ page.dir }}
                             <a href="{{ category.url }}">{{ category.title }}</a>
                         </li>
                     {% endfor %}
+
+                    <a href="/" class="project-link">
+                        <button class="btn btn-default btn-sm">
+                            <i class="fa fa-play-circle fa-lg"></i> Reel
+                        </button>
+                    </a>
                 </nav>
             </div>
             <div class="col-md-9 mt-6">
                 <div class="row">
-                    <h2 class="section-title text-center">{{ page.title }}</h2>
-
                     {% for post in posts %}
                         <div class="col-xs-4 post-thumb wow fadeIn">
                             <a href="{{ post.image }}" data-fancybox>

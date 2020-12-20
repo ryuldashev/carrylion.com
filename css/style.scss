@@ -186,6 +186,41 @@ button.btn, input.btn {
         padding: 10px 15px !important;
       }
     }
+    
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+
+    .dropdown-menu {
+      min-width: 120px;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 0 0 10px;
+        border-style: solid;
+        border-right: solid 10px transparent;
+        border-left: solid 10px transparent;
+        position: absolute;
+        top: -11px;
+        left: 50%;
+        margin-left: -10px;
+        color: rgba(0, 0, 0, 0.15);
+      }
+
+      li {
+        text-align: center;
+
+        a {
+          display: inline-block;
+          padding: 0 3px !important;
+        }
+      }
+    }
   }
   
   .container {
@@ -238,7 +273,6 @@ button.btn, input.btn {
 }
 
 .section-nav {
-  margin-top: calc(30px + 2em);
 
   li {
     list-style: none;
