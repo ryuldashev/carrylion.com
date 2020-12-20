@@ -3,7 +3,7 @@ title: 2-2
 date: 2020-12-20 08:59:00 Z
 categories:
 - illustrations
-position: 9
+position: 7
 image: "/uploads/2-2.jpg"
 ---
 
