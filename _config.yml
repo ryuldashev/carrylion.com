@@ -2,18 +2,19 @@
 title: Carina Mirzaeva
 timezone: UTC
 collections:
+  categories:
+    title: Categories
+    output: true
+    permalink: "/personal/:title"
   personal:
     title: Personal
+    output: false
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-  categories:
-    title: Categories
-    output: true
-    permalink: /personal/:title
 defaults:
 - scope:
     path: ''

@@ -1,5 +1,6 @@
 ---
-permalink: /personal
-redirect: /personal/illustrations
+permalink: "/personal"
+redirect: "/personal/illustrations"
 layout: redirect
 ---
+
