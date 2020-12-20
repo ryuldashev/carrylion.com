@@ -31,7 +31,7 @@ assign posts = site.personal | where: "categories", page.code
                     {% for post in posts %}
                         <div class="col-xs-4 post-thumb wow fadeIn">
                             <a href="{{ post.image }}" data-fancybox>
-                                <img src="{{ post.image }}" class="image" alt="">
+                                <img src="{{ post.image }}" class="img-thumbnail" alt="">
                             </a>
                         </div>
                     {% endfor %}
