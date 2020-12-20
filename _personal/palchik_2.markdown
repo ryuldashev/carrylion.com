@@ -1,5 +1,5 @@
 ---
-title: Palchik 2
+title: Deer
 date: 2020-09-14 00:00:00 Z
 categories:
 - illustrations
