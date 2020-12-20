@@ -1,10 +1,7 @@
 {% include header.html %}
 
-{%
-assign posts = site.personal | where: "categories", page.code
-    | sort: "date"
-    | reverse
-%}
+{% assign categories = site.categories | sort: "position" %}
+{% assign posts = site.personal | where: "categories", page.code | sort: "position" %}
 
 <main class="">
     <div class="container">
@@ -13,7 +10,7 @@ assign posts = site.personal | where: "categories", page.code
         <div class="row">
             <div class="col-md-3 mt-6">
                 <nav class="section-nav">
-                    {% for category in site.categories %}
+                    {% for category in categories %}
                         <li {% if page.url == category.url %}class="active"{% endif %}>
                             <a href="{{ category.url }}">{{ category.title }}</a>
                         </li>

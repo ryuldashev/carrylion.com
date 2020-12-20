@@ -57,7 +57,8 @@
                   </a>
                   {% if item.popup_collection %}
                     <ul class="dropdown-menu">
-                        {% for submenu in site[item.popup_collection] %}
+                        {% assign submenus = site[item.popup_collection] | sort: "position" %}
+                        {% for submenu in submenus %}
                             <li>
                                 <a href="{{ submenu.url }}" {% if page.url == submenu.url %}class="active"{% endif %}>
                                     {{ submenu.title }}
