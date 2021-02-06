@@ -20,12 +20,20 @@
           var actualPercent;
 
           actualPercent = startPercent + (yPos / wHeight * 100 / 2.5);
-          console.log(actualPercent);
 
           bgobj.css({
               backgroundPosition: '50% ' + actualPercent + '%'
           })
       });
+
+      $('.reel-text').on('mouseenter', function() {
+          console.log('enter');
+          $(this).html('<i class="fa fa-play wow fadeIn"></i>');
+      })
+      $('.reel-text').on('mouseleave', function() {
+          console.log('leave');
+          $(this).html('<span class="wow fadeIn scaled">REEL</span>');
+      })
   });
   
 })();

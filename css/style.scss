@@ -335,18 +335,7 @@ button.btn, input.btn {
     text-transform: uppercase;
     color: #fff;
   }
-  //h1:after {
-  //  content: ' ';
-  //  display: block;
-  //  margin: 0 auto;
-  //  border-bottom: 3px solid #F87C2E;
-  //  width: 20%;
-  //  height: .25em;
-  //  opacity: 0.8;
-  //  @include bp-xsmall {
-  //    width: 30%;
-  //  }
-  //}
+
   h2 {
     text-transform: uppercase;
     font-weight: normal;
@@ -356,15 +345,28 @@ button.btn, input.btn {
   }
 
   .reel-link {
-    display: block;
+    display: flex;
     min-height: 50vh;
-    line-height: 55vh;
-    font-size: 64px;
+    font-size: 94px;
     background-size: 120% auto;
     background-repeat: no-repeat;
     background-position: 50% 35%;
     color: #fff !important;
     text-decoration: none !important;
+    align-items: center;
+    justify-content: center;
+
+    .reel-text {
+      padding-top: 3.2vh;
+      display: inline-block;
+      width: 6em;
+
+      .scaled {
+        display: inline-block;
+        transform: scale(1, 1.6);
+      }
+    }
+
   }
 
   .section-jump {
