@@ -1,6 +1,7 @@
 ---
-layout: home
+title: Main Page
 body_class: homepage
-image: 
+image: "/uploads/demoreel.jpg"
+layout: home
 ---
 
