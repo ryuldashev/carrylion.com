@@ -1,31 +1,29 @@
-<div class="container">
+<div class="container-fluid">
 
   <div class="row">
-
-    <div class="col-md-12">
 
       <div class="hero-container">
 
         <div class="hero-content">
-          <h1 class="text-center">{{site.title}}</h1>
-          <h2 class="text-center wow rubberBand">{{site.description}}</h2>
+          <h1 class="text-center wow fadeIn" data-wow-duration="2s">{{site.title}}</h1>
+          <h2 class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">{{site.description}}</h2>
 
-          <div class="hero-video">
-            <a data-fancybox data-ratio="2" data-autoplay="1" href="{{ site.demoreel_url }}">
-              <img src="{{ page.img_demoreel }}" width="100%" alt="">
-            </a>
+          <div class="hero-video wow fadeIn" data-wow-duration="2s">
+              <h2>
+                <a data-fancybox class="reel-link" style="background-image: url('{{ page.image }}')" data-ratio="2" data-autoplay="1" href="{{ site.demoreel_url }}">
+                    <span class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">REEL</span>
+                </a>
+              </h2>
           </div>
+
+          <a class="section-jump text-center wow fadeIn" data-wow-delay="1.5s" href="#portfolio">
+              <i class="fa fa-angle-down fa-3x"></i>
+          </a>
 
         </div>
 
       </div>
 
-      <a class="section-jump text-center" href="#portfolio">
-        <i class="fa fa-angle-down fa-3x"></i>
-      </a>
-
     </div>
-
-  </div>
 
 </div>

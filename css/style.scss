@@ -133,7 +133,6 @@ button.btn, input.btn {
 }
 
 .navbar-light {
-  background-color: #fff;
   transition: box-shadow;
 
   a {
@@ -263,7 +262,6 @@ button.btn, input.btn {
   }
 
   &.scrolled {
-    box-shadow: 10px 0 20px rgba(0,0,0,0.2);
 
     .navbar-brand {
       display: block;
@@ -309,14 +307,20 @@ button.btn, input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 15vh 0 5vh 0;
-  min-height: 70vh;
+  overflow: hidden;
+  margin: 0 -15px 2vh -15px;
+  min-height: 100vh;
 }
 
 .hero-content {
-  width: 60%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
+  padding: 5vh 0 5vh;
   display: table;
+  background-color: #000;
+
   @include bp-medium {
     width: 100%;
   }
@@ -329,39 +333,44 @@ button.btn, input.btn {
   h1 {
     font-size: 48px;
     text-transform: uppercase;
+    color: #fff;
   }
-  h1:after {
-    content: ' ';
-    display: block;
-    margin: 0 auto;
-    border-bottom: 3px solid #F87C2E;
-    width: 20%;
-    height: .25em;
-    opacity: 0.8;
-    @include bp-xsmall {
-      width: 30%;
-    }
-  }
+  //h1:after {
+  //  content: ' ';
+  //  display: block;
+  //  margin: 0 auto;
+  //  border-bottom: 3px solid #F87C2E;
+  //  width: 20%;
+  //  height: .25em;
+  //  opacity: 0.8;
+  //  @include bp-xsmall {
+  //    width: 30%;
+  //  }
+  //}
   h2 {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 10px;
     margin-top: 15px;
+    color: #fff;
   }
 
-  @keyframes stickyletters {
-    0% {
-      letter-spacing: 60px;
-      opacity: 0;
-    }
-    50% {
-      letter-spacing: 60px;
-      opacity: 0.5;
-    }
-    to {
-      letter-spacing: 10px;
-      opacity: 1;
-    }
+  .reel-link {
+    display: block;
+    min-height: 50vh;
+    line-height: 55vh;
+    font-size: 64px;
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  .section-jump {
+    position: absolute;
+    top: 90vh;
+    left: calc(50% - 15px);
   }
 
 
@@ -380,7 +389,7 @@ button.btn, input.btn {
   }
 
   .hero-video {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
 
     h4 {
@@ -390,7 +399,7 @@ button.btn, input.btn {
     }
 
     img {
-      max-width: 640px;
+      width: 100%;
     }
   }
 }

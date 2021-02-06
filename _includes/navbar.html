@@ -1,0 +1,50 @@
+
+<nav class="navbar navbar-light {% if false %}navbar-fixed-top{% endif %}">
+  <div class="container">
+      <div class="navbar-header">
+          <div class="navbar-brand">
+              <a href="/">
+                  <img src="/img/logo.png" alt="">
+              </a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+              ☰
+          </button>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          {% for item in site.nav_item %}
+            <li>
+              <a href="{{ item.url }}" {% if page.url contains item.url %} class="active"{% endif %}>
+                  {{ item.text }}
+              </a>
+              {% if item.popup_collection %}
+                <ul class="dropdown-menu">
+                    {% assign submenus = site[item.popup_collection] | sort: "position" %}
+                    {% for submenu in submenus %}
+                        <li>
+                            <a href="{{ submenu.url }}" {% if page.url == submenu.url %}class="active"{% endif %}>
+                                {{ submenu.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <a href="https://carrylion.com">English</a>
+          </li>
+          <li>
+              <a href="https://carrylion.fr" class="active">Français</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
