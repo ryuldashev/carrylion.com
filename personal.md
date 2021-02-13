@@ -1,6 +1,6 @@
 ---
 permalink: "/personal"
-redirect: "/personal/illustrations"
+redirect: "/personal/animations"
 layout: redirect
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Animations
-position: 1
+position: 0
 code: animations
 layout: category
 ---
