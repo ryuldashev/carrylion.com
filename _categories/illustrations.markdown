@@ -1,6 +1,6 @@
 ---
 title: Illustrations
-position: 1
+position: 2
 code: illustrations
 layout: category
 ---

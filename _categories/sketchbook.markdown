@@ -1,6 +1,6 @@
 ---
 title: Sketchbook
-position: 2
+position: 3
 code: sketchbook
 layout: category
 ---
