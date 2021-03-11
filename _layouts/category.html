@@ -33,7 +33,7 @@
                                 <i class="btn-play fa fa-play wow fadeIn"></i>
                             </a>
                             {% else %}
-                            <a href="{{ post.image }}" data-fancybox class="img-thumbnail">
+                            <a href="{% if post.video_url %}{{ post.video_url }}{% else %}{{ post.image }}{% endif %}" data-fancybox class="img-thumbnail">
                                 <img src="{{ post.image }}" alt="">
                             </a>
                             {% endif %}

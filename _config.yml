@@ -26,8 +26,9 @@ defaults:
     path: ''
     type: personal
   values:
-    image: 
-    link: 
+    image:
+    video:
+    video_url:
     published: 
 description: Animation
 section_title: Œuvres en vedette
