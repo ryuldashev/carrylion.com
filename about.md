@@ -1,5 +1,5 @@
 ---
-title: Sur
+title: À propos de moi
 permalink: "/about"
 image: "/uploads/IMG_20200323_210806_240-01.jpeg"
 layout: inner
